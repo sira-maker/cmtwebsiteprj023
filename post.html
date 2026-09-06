@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>บอร์ดเกม Review - About Us</title>
+  <title>บอร์ดเกม Review - ส่งข้อความ</title>
   <link rel="icon"href="test.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
@@ -62,28 +62,23 @@
   </section>
 
   <main class="main-container">
-    <h2 class="section-title">About Us</h2>
-    
-    <div class="section-title">
-                    <h3>🎲 คัดสรรเกมคุณภาพ</h3>
-                    <p>รวบรวมบอร์ดเกมหลากหลายแนว ทั้งสายปาร์ตี้ สายกลยุทธ์ และเกมครอบครัว</p>
-                </div>
-                <div class="section-title">
-                    <h3>🤝 สร้างคอมมูนิตี้</h3>
-                    <p>เปิดพื้นที่ให้ทุกคนได้มาพบปะ แลกเปลี่ยน และร่วมเล่นเกมด้วยกันอย่างอบอุ่น</p>
-                </div>
-                <div class="section-title">
-                    <h3>💡 เผยแพร่ความสนุก</h3>
-                    <p>ผลักดันให้บอร์ดเกมเป็นกิจกรรมโปรดในทุกๆ วันของคุณ</p>
-                </div>
-	<section class="section-title">
-            <h2>ติดต่อเรา</h2>
-	<p class="card-title">นายสิรภัทร ขันจันทร์ 023 ปวช.2 เทคนิคคอมพิวเตอร์</p>
-            <p><strong>ที่อยู่:</strong> 123 ถนนยิ้มสู้ แขวงความสุข เขตสนุกสนาน กรุงเทพฯ</p>
-            <p><strong>อีเมล:</strong> probedwars@boardgamehub.com</p>
-            <p><strong>โทรศัพท์:</strong> 02-123-4545, 081-123-1234</p>
-	<p><strong>ID LINE:</strong> boardnmgame123234</p>
-	<a href="post.html" class="btn">ส่งข้อความ</a>
+    <h2 class="section-title">ส่งข้อความ</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">ชื่อของคุณ:</label>
+                <input type="text" id="name" name="name" required placeholder="กรอกชื่อ-นามสกุล">
+            </div>
+            <div class="form-group">
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required placeholder="กรอกอีเมลของคุณ">
+            </div>
+            <div class="form-group">
+                <label for="message">ข้อความ:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="พิมพ์ข้อความของคุณที่นี่..."></textarea>
+            </div>
+            <button type="submit">ส่งข้อความ</button>
+        </form>
+    </section>
         </section>
   </main>
 
@@ -142,7 +137,7 @@
 
 
   <footer>
-    <p>บอร์ดเกม Review</p>
+	<a href="lol.html">บอร์ดเกม Review</a>
   </footer>
 
 </body>
