@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Board Game Review - ศูนย์รวมรีวิวมืออาชีพ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Kanit', sans-serif; }
+    body { background-color: #f8f9fa; color: #212529; line-height: 1.6; }
+
+    /* Header */
+    header { background-color: #1a202c; color: #fff; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    .logo { font-size: 1.5rem; font-weight: 600; color: #ed8936; }
+    nav a { color: #fff; text-decoration: none; margin-left: 1.5rem; transition: 0.2s; }
+    nav a:hover { color: #ed8936; }
+
+    /* Hero Section */
+    .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=1200&q=80') center/cover; color: #fff; text-align: center; padding: 4rem 1rem; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .hero p { font-size: 1.1rem; margin-bottom: 1.5rem; opacity: 0.9; }
+
+    /* Filter Zone */
+    .filter-container { max-width: 1100px; margin: -1.5rem auto 2rem; background: #fff; padding: 1rem 1.5rem; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    .filter-group select { padding: 0.5rem 1rem; border: 1px solid #cbd5e0; border-radius: 6px; background-color: #fff; }
+
+    /* Content & Cards Grid */
+    .main-container { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+    .section-title { font-size: 1.5rem; margin-bottom: 1rem; border-left: 4px solid #ed8936; padding-left: 0.5rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem; }
+
+    .card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.2s; }
+    .card:hover { transform: translateY(-4px); }
+    .card-img { width: 100%; height: 180px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .badge { background: #feebc8; color: #c05621; padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.8rem; font-weight: 600; display: inline-block; margin-bottom: 0.5rem; }
+    .card-title { font-size: 1.2rem; margin-bottom: 0.4rem; }
+    .card-meta { font-size: 0.85rem; color: #718096; margin-bottom: 0.8rem; }
+    .rating { color: #d69e2e; font-weight: 600; margin-bottom: 1rem; }
+    .btn { display: block; text-align: center; background: #ed8936; color: #fff; text-decoration: none; padding: 0.5rem; border-radius: 6px; font-weight: 600; }
+    .btn:hover { background: #dd6b20; }
+
+    /* Footer */
+    footer { background-color: #1a202c; color: #a0aec0; text-align: center; padding: 2rem 1rem; margin-top: 2rem; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">🎲 Board Game Review</div>
+    <nav>
+      <a href="#">หน้าแรก</a>
+      <a href="#">หมวดหมู่</a>
+      <a href="#">วิธีเล่น</a>
+      <a href="#">เกี่ยวกับเรา</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>เปิดกล่องความสนุก อ่านรีวิวจริง ก่อนลงสนามจริง</h1>
+    <p>ค้นหาบอร์ดเกมที่ใช่สำหรับคุณและแก๊งเพื่อนได้ง่ายๆ ที่นี่</p>
+  </section>
+
+  <div class="filter-container">
+    <div class="filter-group">
+      <select><option>จำนวนผู้เล่น (ทั้งหมด)</option><option>1-2 คน</option><option>3-4 คน</option><option>5+ คน</option></select>
+    </div>
+    <div class="filter-group">
+      <select><option>ระยะเวลา (ทั้งหมด)</option><option>น้อยกว่า 30 นาที</option><option>30-60 นาที</option><option>60+ นาที</option></select>
+    </div>
+    <div class="filter-group">
+      <select><option>หมวดหมู่ (ทั้งหมด)</option><option>Party Games</option><option>Strategy Games</option><option>Bluffing Games</option></select>
+    </div>
+  </div>
+
+  <main class="main-container">
+    <h2 class="section-title">รีวิวแนะนำประจำสัปดาห์</h2>
+    
+    <div class="grid">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=500&q=80" alt="Catan" class="card-img">
+        <div class="card-body">
+          <span class="badge">Strategy</span>
+          <h3 class="card-title">Catan (ล่าอาณานิคม)</h3>
+          <p class="card-meta">👥 3-4 คน | ⏱️ 60-90 นาที | 🟡 ปานกลาง</p>
+          <div class="rating">⭐ 4.8 / 5.0</div>
+          <a href="#" class="btn">อ่านรีวิวฉบับเต็ม</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=500&q=80" alt="Exploding Kittens" class="card-img">
+        <div class="card-body">
+          <span class="badge">Party</span>
+          <h3 class="card-title">Exploding Kittens</h3>
+          <p class="card-meta">👥 2-5 คน | ⏱️ 15 นาที | 🟢 เล่นง่าย</p>
+          <div class="rating">⭐ 4.5 / 5.0</div>
+          <a href="#" class="btn">อ่านรีวิวฉบับเต็ม</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=500&q=80" alt="Avalon" class="card-img">
+        <div class="card-body">
+          <span class="badge">Bluffing</span>
+          <h3 class="card-title">The Resistance: Avalon</h3>
+          <p class="card-meta">👥 5-10 คน | ⏱️ 30 นาที | 🟡 ปานกลาง</p>
+          <div class="rating">⭐ 4.9 / 5.0</div>
+          <a href="#" class="btn">อ่านรีวิวฉบับเต็ม</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Board Game Review - สงวนลิขสิทธิ์ตามกฎหมาย</p>
+  </footer>
+
+</body>
+</html>

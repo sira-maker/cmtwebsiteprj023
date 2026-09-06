@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>บอร์ดเกม Review - Index</title>
+  <link rel="icon"href="test.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Kanit', sans-serif; }
+    body { background-color: #f8f9fa; color: #212529; line-height: 1.6; }
+
+    /* Header */
+    header { background-color: rgb(128,128,128); color: #fff; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    .logo { font-size: 1.5rem; font-weight: 600; color: #ffffff; }
+    nav a { color: #fff; text-decoration: none; margin-left: 1.5rem; transition: 0.2s; }
+    nav a:hover { color: #ed8936; }
+
+    /* Hero Section */
+    .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('boardgame.jpg') center/cover; color: #fff; text-align: center; padding: 4rem 1rem; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .hero p { font-size: 1.1rem; margin-bottom: 1.5rem; opacity: 0.9; }
+
+    /* Filter Zone */
+    .filter-container { max-width: 1100px; margin: -1.5rem auto 2rem; background: #fff; padding: 1rem 1.5rem; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    .filter-group select { padding: 0.5rem 1rem; border: 1px solid #cbd5e0; border-radius: 6px; background-color: #fff; }
+
+    /* Content & Cards Grid */
+    .main-container { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+    .section-title { font-size: 1.5rem; margin-bottom: 1rem; border-left: 4px solid #ed8936; padding-left: 0.5rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem; }
+
+    .card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.2s; }
+    .card:hover { transform: translateY(-4px); }
+    .card-img { width: 100%; height: 400px; object-fit: cover; border-radius: 10px;}
+    .card-body { padding: 1.2rem; }
+    .badge { background: #feebc8; color: #c05621; padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.8rem; font-weight: 600; display: inline-block; margin-bottom: 0.5rem; }
+    .card-title { font-size: 2rem; margin-bottom: 0.4rem; }
+    .card-meta { font-size: 1.5rem; color: #718096; margin-bottom: 0.8rem; }
+    .rating { color: #d69e2e; font-weight: 600; margin-bottom: 1rem; }
+    .btn { display: block; text-align: center; background: #ed8936; color: #fff; text-decoration: none; padding: 0.5rem; border-radius: 6px; font-weight: 600; }
+    .btn:hover { background: #dd6b20; }
+
+    /* Footer */
+    footer { background-color: rgb(128,128,128); color: #ffffff; text-align: center; padding: 2rem 1rem; margin-top: 2rem; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">บอร์ดเกม Review</div>
+    <nav>
+      <a href="index.html">หน้าแรก</a>
+      <a href="page2.html">หมวดหมู่</a>
+      <a href="page3.html">วิธีเล่น</a>
+      <a href="page4.html">เกี่ยวกับเรา</a>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <h2 class="section-title">Spyfall</h2>
+    <img src="Spyfall.jpg" alt="Spyfall" class="card-img">
+    <h3 class="card-title">Spyfall (สปายฟอลล์)</h3>
+    <p class="card-meta">ประเภทเกม: Party</p>
+    <p class="card-meta">จำนวนผู้เล่น: 3–8 คน</p>
+    <p class="card-meta">ความยาก: ง่ายมาก (เหมาะกับผู้เล่นทุกระดับ)</p>
+    <p class="card-meta">เวลาในการเล่น: ประมาณ 15 นาทีต่อรอบ</p>
+    <h2 class="section-title">วิธีการเล่น</h2>
+    <p class="card-meta">
+        การแจกการ์ด: ในแต่ละรอบ ผู้เล่นทุกคนจะได้รับ "การ์ดสถานที่" ชุดเดียวกัน (เช่น โรงพยาบาล, สถานีอวกาศ, คาสิโน) แต่จะมีผู้เล่น 1 คนที่ได้การ์ดคำว่า "Spy" (สายลับ) ซึ่งจะไม่รู้ว่าสถานที่นั้นคือที่ไหนการตั้งคำถาม: เริ่มจับเวลา (ประมาณ 8–10 นาที) ผู้เล่นจะสลับกันถามคำถามใครก็ได้ในวงเกี่ยวกับสถานที่นั้น โดยคำถามต้องไม่เจาะจงเกินไปจนสายลับรู้ทัน และไม่กว้างเกินไปจนคนอื่นจับไม่ได้ว่าเราอยู่สถานที่เดียวกัน เช่น "แต่งตัวยังไงมาที่นี่?" หรือ "คุณคิดว่าอาหารที่นี่ราคาแพงไหม?"การตอบและการจับพิรุธ: คนที่ถูกถามต้องตอบแล้วเลือกไปถามคนอื่นต่อวนไปเรื่อยๆ ฝั่งผู้เล่นทั่วไปต้องสังเกตว่าใครตอบแปลกๆ หรือตอบแบบกว้างๆ เพื่อหาว่าใครคือสายลับ ส่วนสายลับต้องเนียนฟังคำถามและคำตอบของคนอื่นเพื่อเดาให้ได้ว่าตอนนี้ทุกคนอยู่ที่ไหนการจบเกมและนับคะแนน:หากหมดเวลา ผู้เล่นทุกคนจะโหวตหาคนที่เป็นสายลับ หากทายถูก ผู้เล่นทั่วไปจะได้คะแนน แต่ถ้าสายลับเนียนจนคนอื่นทายผิด สายลับจะเป็นฝ่ายชนะหรือระหว่างเกม สายลับสามารถหยุดเวลาแล้วประกาศสถานที่ที่ตัวเองเดาได้ทันที ถ้าทายถูกสายลับชนะเลิศ ถ้าทายผิดผู้เล่นทั่วไปชนะ
+    </p>
+	<iframe width="450" height="250" src="https://www.youtube.com/embed/uqIgtqdUOZI?si=F4m246ogGS35XTqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </main>
+
+<!-- Audio Element with Loop attribute -->
+<audio id="bg-music" src="IndiHomePaketPhoenix.mp3" loop></audio>
+
+<!-- Custom Play/Pause Button to handle browser autoplay restrictions -->
+<button id="music-toggle" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; padding: 10px; cursor: pointer;">
+  Play Song
+</button>
+
+<script>
+  const audio = document.getElementById('bg-music');
+  const toggleBtn = document.getElementById('music-toggle');
+
+  // 1. Check and restore previous playback state from localStorage
+  const savedTime = localStorage.getItem('musicTime');
+  const isPlaying = localStorage.getItem('musicPlaying') === 'true';
+
+  if (savedTime) {
+    audio.currentTime = parseFloat(savedTime);
+  }
+
+  // 2. Attempt to autoplay if previously playing
+  if (isPlaying) {
+    audio.play()
+      .then(() => {
+        toggleBtn.innerText = "Pause Song";
+      })
+      .catch(error => {
+        // Browser blocked autoplay; requires user interaction
+        console.log("Autoplay blocked by browser policy. Awaiting user click.");
+        toggleBtn.innerText = "Play Song";
+      });
+  }
+
+  // 3. Play/Pause toggle logic
+  toggleBtn.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      toggleBtn.innerText = "Pause Song";
+      localStorage.setItem('musicPlaying', 'true');
+    } else {
+      audio.pause();
+      toggleBtn.innerText = "Play Song";
+      localStorage.setItem('musicPlaying', 'false');
+    }
+  });
+
+  // 4. Continuously save the current time before the page changes or reloads
+  window.addEventListener('beforeunload', () => {
+    localStorage.setItem('musicTime', audio.currentTime);
+    localStorage.setItem('musicPlaying', !audio.paused);
+  });
+</script>
+
+
+  <footer>
+    <p>บอร์ดเกม Review</p>
+  </footer>
+
+</body>
+</html>

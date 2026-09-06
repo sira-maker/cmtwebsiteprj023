@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>บอร์ดเกม Review - Index</title>
+  <link rel="icon"href="test.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Kanit', sans-serif; }
+    body { background-color: #f8f9fa; color: #212529; line-height: 1.6; }
+
+    /* Header */
+    header { background-color: rgb(128,128,128); color: #fff; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    .logo { font-size: 1.5rem; font-weight: 600; color: #ffffff; }
+    nav a { color: #fff; text-decoration: none; margin-left: 1.5rem; transition: 0.2s; }
+    nav a:hover { color: #ed8936; }
+
+    /* Hero Section */
+    .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('boardgame.jpg') center/cover; color: #fff; text-align: center; padding: 4rem 1rem; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .hero p { font-size: 1.1rem; margin-bottom: 1.5rem; opacity: 0.9; }
+
+    /* Filter Zone */
+    .filter-container { max-width: 1100px; margin: -1.5rem auto 2rem; background: #fff; padding: 1rem 1.5rem; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    .filter-group select { padding: 0.5rem 1rem; border: 1px solid #cbd5e0; border-radius: 6px; background-color: #fff; }
+
+    /* Content & Cards Grid */
+    .main-container { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+    .section-title { font-size: 1.5rem; margin-bottom: 1rem; border-left: 4px solid #ed8936; padding-left: 0.5rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem; }
+
+    .card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.2s; }
+    .card:hover { transform: translateY(-4px); }
+    .card-img { width: 100%; height: 400px; object-fit: cover; border-radius: 10px;}
+    .card-body { padding: 1.2rem; }
+    .badge { background: #feebc8; color: #c05621; padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.8rem; font-weight: 600; display: inline-block; margin-bottom: 0.5rem; }
+    .card-title { font-size: 2rem; margin-bottom: 0.4rem; }
+    .card-meta { font-size: 1.5rem; color: #718096; margin-bottom: 0.8rem; }
+    .rating { color: #d69e2e; font-weight: 600; margin-bottom: 1rem; }
+    .btn { display: block; text-align: center; background: #ed8936; color: #fff; text-decoration: none; padding: 0.5rem; border-radius: 6px; font-weight: 600; }
+    .btn:hover { background: #dd6b20; }
+
+    /* Footer */
+    footer { background-color: rgb(128,128,128); color: #ffffff; text-align: center; padding: 2rem 1rem; margin-top: 2rem; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">บอร์ดเกม Review</div>
+    <nav>
+      <a href="index.html">หน้าแรก</a>
+      <a href="page2.html">หมวดหมู่</a>
+      <a href="page3.html">วิธีเล่น</a>
+      <a href="page4.html">เกี่ยวกับเรา</a>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <h2 class="section-title">One Night Ultimate Werewolf</h2>
+    <img src="onultwerew.jpg" alt="One Night Ultimate Werewolf" class="card-img">
+    <h3 class="card-title">One Night Ultimate Werewolf (เกมมนุษย์หมาป่าคืนเดียว)</h3>
+    <p class="card-meta">ประเภทเกม: Party</p>
+    <p class="card-meta">จำนวนผู้เล่น: 3–10 คน</p>
+    <p class="card-meta">ความยาก: ง่ายมาก (เหมาะสำหรับผู้เริ่มต้น)</p>
+    <p class="card-meta">เวลาในการเล่น: ประมาณ 10 นาทีต่อรอบ</p>
+    <h2 class="section-title">วิธีการเล่น</h2>
+    <p class="card-meta">
+        เตรียมการ (Setup):เลือกการ์ดบทบาทมารวมกัน โดยให้มากกว่าจำนวนผู้เล่น 3 ใบเสมอ (เช่น มีผู้เล่น 5 คน ให้ใช้การ์ด 8 ใบ)สับการ์ดแล้วแจกให้ผู้เล่นคนละ 1 ใบคว่ำหน้าไว้ ส่วนการ์ดที่เหลือ 3 ใบทิ้งไว้ตรงกลางโต๊ะผู้เล่นแอบดูการ์ดของตัวเองแล้วคว่ำไว้ข้างหน้า ห้ามให้คนอื่นเห็นช่วงเวลากลางคืน (Night Phase):ทุกคนหลับตาตัวละครที่มีความสามารถพิเศษ (เช่น หมาป่า, ผู้หยั่งรู้, โจร, ตัวป่วน) จะทยอยตื่นขึ้นมาทำความสามารถของตัวเองตามลำดับ เช่น สลับการ์ด แอบดูการ์ดคนอื่น หรือดูการ์ดกองกลาง (สามารถใช้แอปพลิเคชันมือถือช่วยเปิดเสียงประกาศแทนคนดำเนินเกมได้)จุดเด่น: ไพ่ในมือคุณอาจจะถูกคนอื่นแอบสลับตอนหลับตา ทำให้คุณอาจจะไม่ใช่บทบาทเดิมตอนตื่นขึ้นมาช่วงเวลากลางวัน (Day Phase / การอภิปราย):ทุกคนลืมตาและเริ่มจับเวลาคุยกัน (ประมาณ 3–5 นาที)ทุกคนช่วยกันพูดคุย โกหก หรือสืบหาความจริงว่าใครคือมนุษย์หมาป่าการลงคะแนน (Voting):เมื่อหมดเวลา ทุกคนต้องชี้หน้าผู้เล่น 1 คนพร้อมกันว่า "ใครคือหมาป่า"ใครที่ถูกโหวตสูงสุดจะถูกกำจัด หากจับหมาป่าได้ 1 ตัว ฝ่ายชาวบ้านชนะ แต่ถ้าไม่มีหมาป่าตาย (หรือโหวตผิดคนที่เป็นชาวบ้าน) ฝ่ายหมาป่าจะชนะ
+    </p>
+	<iframe width="450" height="250" src="https://www.youtube.com/embed/pPwpCVqiSkk?si=eUEpDZAoIzdmCDfR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </main>
+
+<!-- Audio Element with Loop attribute -->
+<audio id="bg-music" src="IndiHomePaketPhoenix.mp3" loop></audio>
+
+<!-- Custom Play/Pause Button to handle browser autoplay restrictions -->
+<button id="music-toggle" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; padding: 10px; cursor: pointer;">
+  Play Song
+</button>
+
+<script>
+  const audio = document.getElementById('bg-music');
+  const toggleBtn = document.getElementById('music-toggle');
+
+  // 1. Check and restore previous playback state from localStorage
+  const savedTime = localStorage.getItem('musicTime');
+  const isPlaying = localStorage.getItem('musicPlaying') === 'true';
+
+  if (savedTime) {
+    audio.currentTime = parseFloat(savedTime);
+  }
+
+  // 2. Attempt to autoplay if previously playing
+  if (isPlaying) {
+    audio.play()
+      .then(() => {
+        toggleBtn.innerText = "Pause Song";
+      })
+      .catch(error => {
+        // Browser blocked autoplay; requires user interaction
+        console.log("Autoplay blocked by browser policy. Awaiting user click.");
+        toggleBtn.innerText = "Play Song";
+      });
+  }
+
+  // 3. Play/Pause toggle logic
+  toggleBtn.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      toggleBtn.innerText = "Pause Song";
+      localStorage.setItem('musicPlaying', 'true');
+    } else {
+      audio.pause();
+      toggleBtn.innerText = "Play Song";
+      localStorage.setItem('musicPlaying', 'false');
+    }
+  });
+
+  // 4. Continuously save the current time before the page changes or reloads
+  window.addEventListener('beforeunload', () => {
+    localStorage.setItem('musicTime', audio.currentTime);
+    localStorage.setItem('musicPlaying', !audio.paused);
+  });
+</script>
+
+
+  <footer>
+    <p>บอร์ดเกม Review</p>
+  </footer>
+
+</body>
+</html>

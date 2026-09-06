@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>บอร์ดเกม Review - หมวดหมู่</title>
+  <link rel="icon"href="test.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Kanit', sans-serif; }
+    body { background-color: #f8f9fa; color: #212529; line-height: 1.6; }
+
+    /* Header */
+    header { background-color: rgb(128,128,128); color: #fff; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    .logo { font-size: 1.5rem; font-weight: 600; color: #ffffff; }
+    nav a { color: #fff; text-decoration: none; margin-left: 1.5rem; transition: 0.2s; }
+    nav a:hover { color: #ed8936; }
+
+    /* Hero Section */
+    .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('ExplodingKittens.jpg') center/cover; color: #fff; text-align: center; padding: 4rem 1rem; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .hero p { font-size: 1.1rem; margin-bottom: 1.5rem; opacity: 0.9; }
+
+    /* Filter Zone */
+    .filter-container { max-width: 1100px; margin: -1.5rem auto 2rem; background: #fff; padding: 1rem 1.5rem; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    .filter-group select { padding: 0.5rem 1rem; border: 1px solid #cbd5e0; border-radius: 6px; background-color: #fff; }
+
+    /* Content & Cards Grid */
+    .main-container { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+    .section-title { font-size: 1.5rem; margin-bottom: 1rem; border-left: 4px solid #ed8936; padding-left: 0.5rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem; }
+
+    .card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.2s; }
+    .card:hover { transform: translateY(-4px); }
+    .card-img { width: 100%; height: 180px; object-fit: cover; }
+    .card-body { padding: 1.2rem; }
+    .badge { background: #feebc8; color: #c05621; padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.8rem; font-weight: 600; display: inline-block; margin-bottom: 0.5rem; }
+    .card-title { font-size: 2rem; margin-bottom: 0.4rem; }
+    .card-meta { font-size: 1.5rem; color: #718096; margin-bottom: 0.8rem; }
+    .rating { color: #d69e2e; font-weight: 600; margin-bottom: 1rem; }
+    .btn { display: block; text-align: center; background: #ed8936; color: #fff; text-decoration: none; padding: 0.5rem; border-radius: 6px; font-weight: 600; }
+    .btn:hover { background: #dd6b20; }
+
+    /* Footer */
+    footer { background-color: rgb(128,128,128); color: #ffffff; text-align: center; padding: 2rem 1rem; margin-top: 2rem; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">บอร์ดเกม Review</div>
+    <nav>
+      <a href="index.html">หน้าแรก</a>
+      <a href="page2.html">หมวดหมู่</a>
+      <a href="page3.html">Tier Lists</a>
+      <a href="page4.html">เกี่ยวกับเรา</a>
+    </nav>
+  </header>
+
+<section class="hero">
+
+  </section>
+
+  <main class="main-container">
+    <h2 class="section-title">หมวดหมู่</h2>
+    
+    <h3 class="card-title">
+        หมวดหมู่ของบอร์ดเกมหลัก ๆ แบ่งออกเป็นประเภทต่าง ๆ ตามลักษณะการเล่นและกลุ่มเป้าหมาย เพื่อให้ผู้เล่นเลือกได้ง่ายขึ้น
+    </h3>
+    <div>
+        <p class="card-meta">
+        บอร์ดเกมปาร์ตี้ (Party Games): เน้นความสนุกสนาน เสียงฮา และการปฏิสัมพันธ์ระหว่างผู้เล่นกลุ่มใหญ่ เล่นง่าย กฎไม่ซับซ้อน เช่น Exploding Kittens หรือ Avalon
+        </p>
+        <img style="width: 200px;height: 200px;" src="ExplodingKittens.jpg" alt="img">
+    </div>
+    <div>
+        <p class="card-meta">
+        บอร์ดเกมครอบครัว (Family Games): ออกแบบมาให้เล่นร่วมกันได้ทุกเพศทุกวัย กฎกติกากลาง ๆ ไม่ยากเกินไป และสร้างความสัมพันธ์ที่ดีในครอบครัว เช่น Dixit
+        </p>
+        <img style="width: 200px;height: 200px;" src="gamefmy.jpeg" alt="img">
+    </div>
+    <div>
+        <p class="card-meta">
+        เน้นการใช้ความคิด การวางแผนตาดการณ์ และการบริหารทรัพยากร เหมาะกับผู้ที่ชอบความท้าทายและความเข้มข้น เช่น Splendor
+        </p>
+        <img style="width: 200px;height: 200px;" src="gamestra.jpg" alt="img">
+    </div>
+    <div>
+        <p class="card-meta">
+        บอร์ดเกมสำหรับเด็ก (Kids Games): ฝึกพัฒนาการ ทักษะการคิดเลข หรือการสังเกตสำหรับเด็กเล็ก เช่น บอร์ดเกมเสริมการเรียนรู้ต่าง ๆ
+        </p>
+        <img style="width: 200px;height: 200px;" src="gamekid.jpg" alt="img">
+    </div>
+    <div>
+        <p class="card-meta">
+        บอร์ดเกมแนวสืบสวนและโกหก (Hidden Roles / Deduction): ต้องใช้การจับพิรุธ การบลัฟ (Bluffing) หรือการไขปริศนา เช่น Secret Hitler หรือ Deception
+        </p>
+        <img style="width: 200px;height: 200px;" src="avalon.jpg" alt="img">
+    </div>
+  </main>
+
+<!-- Audio Element with Loop attribute -->
+<audio id="bg-music" src="IndiHomePaketPhoenix.mp3" loop></audio>
+
+<!-- Custom Play/Pause Button to handle browser autoplay restrictions -->
+<button id="music-toggle" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; padding: 10px; cursor: pointer;">
+  Play Song
+</button>
+
+<script>
+  const audio = document.getElementById('bg-music');
+  const toggleBtn = document.getElementById('music-toggle');
+
+  // 1. Check and restore previous playback state from localStorage
+  const savedTime = localStorage.getItem('musicTime');
+  const isPlaying = localStorage.getItem('musicPlaying') === 'true';
+
+  if (savedTime) {
+    audio.currentTime = parseFloat(savedTime);
+  }
+
+  // 2. Attempt to autoplay if previously playing
+  if (isPlaying) {
+    audio.play()
+      .then(() => {
+        toggleBtn.innerText = "Pause Song";
+      })
+      .catch(error => {
+        // Browser blocked autoplay; requires user interaction
+        console.log("Autoplay blocked by browser policy. Awaiting user click.");
+        toggleBtn.innerText = "Play Song";
+      });
+  }
+
+  // 3. Play/Pause toggle logic
+  toggleBtn.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      toggleBtn.innerText = "Pause Song";
+      localStorage.setItem('musicPlaying', 'true');
+    } else {
+      audio.pause();
+      toggleBtn.innerText = "Play Song";
+      localStorage.setItem('musicPlaying', 'false');
+    }
+  });
+
+  // 4. Continuously save the current time before the page changes or reloads
+  window.addEventListener('beforeunload', () => {
+    localStorage.setItem('musicTime', audio.currentTime);
+    localStorage.setItem('musicPlaying', !audio.paused);
+  });
+</script>
+
+
+  <footer>
+    <p>บอร์ดเกม Review</p>
+  </footer>
+
+</body>
+</html>
+
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>บอร์ดเกม Review - ประวัติบอร์ดเกม</title>
+        <link rel="icon"href="test.jpg">
+    </head>
+    <style>
+        /*PC*/
+        .bacg{
+            background-image: url(history.jpg);
+	background-size: 500px 500px;
+            background-repeat: repeat;
+            background-position: top;
+	backdrop-filter: blur(3px);
+        }
+        .heder{
+            position:relative;
+            background-color:rgb(0, 165, 124);
+            border-radius: 3px;
+            text-align: center;
+        }
+        .fon1{
+            font-family:'Times New Roman', Times, serif;
+            text-align:center;
+            font-size: 40px;
+            color: rgb(170, 255, 177);
+        }
+        .fon2{
+            font-family:'Times New Roman', Times, serif;
+            font-size: 200%;
+            color: rgb(211, 255, 215);
+            text-decoration:none;
+            background-color: rgb(0, 110, 46);
+            border-radius: 6px;
+	text-align:center;
+        }
+	.hedrbtns{
+	display: flex;
+	gap: 5px;
+	overflow-x: scroll;
+	}
+        .btns{
+	    flex: 0 0 auto;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 25px;
+            color: rgb(211, 255, 215);
+            background-color: rgb(0, 110, 46);
+	    text-decoration: none;
+            border-radius: 4px;
+        }
+        .man{
+            position: relative;
+            align-items: center;
+            background-color:rgb(0, 165, 124);
+            border-radius: 3px;
+            width: 60%;
+            left: 20%;
+        }
+        .boardgameimage{
+            width: 400px;
+            height: 400px;
+            border-radius: 10px;
+        }
+        /*PHON*/
+        @media screen and (max-width: 800px) {
+        .bacg{
+            background-repeat: repeat-y;
+            background-position: top;
+        }
+        .heder{
+            position:relative;
+            background-color:rgb(0, 165, 124);
+            border-radius: 3px;
+        }
+	.hedrbtns{
+	gap: 10px;
+	}
+        .fon1{
+            font-size: 40px;
+        }
+        .fon2{
+            font-size: 35px;
+        }
+        .btns{
+            font-size: 30px;
+        }
+        .man{
+            width: 100%;
+            left: 0px;
+        }
+        .boardgameimage{
+            width: 300px;
+            height: 300px;
+        }
+        }
+    </style>
+    <body class="bacg">
+        <header>
+            <div class="heder">
+                <div class="fon1">
+                    บอร์ดเกม Review
+                </div>
+                <nav class="hedrbtns">
+                <a href="index.html"class="btns">Index</a>
+                <a href="page2.html"class="btns">ประวัติบอร์ดเกม</a>
+                <a href="page3.html"class="btns">ประเภทบอร์ดเกม</a>
+                <a href="page4.html"class="btns">วิธีการเล่นบอร์ดเกม</a>
+                <a href="page5.html"class="btns">วิดีโอการเล่นบอร์ดเกม</a>
+                <a href="page6.html"class="btns">ขอดีของการเล่นบอร์ดเกม</a>
+                <a href="page9.html"class="btns">สินค้าบอร์ดเกม</a>
+                <a href="page10.html"class="btns">ผู้สร้างเว็บ</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="man" style="align-items: center;">
+                <h1 class="fon1">ประวัติบอร์ดเกม</h1>
+                <div style="display: flex;justify-content: center;">
+                    <img class="boardgameimage" src="history.jpg" alt="kuy board game">
+                </div>
+                <p class="fon2">
+                    ประวัติบอร์ดเกมเริ่มต้นขึ้นกว่า 5,000 ปีก่อน ในยุคอียิปต์โบราณและเมโสโปเตเมีย ก่อนที่มนุษย์จะรู้จักการประดิษฐ์ตัวอักษรเสียอีก
+                </p>
+                <ul class="fon2">
+                    <li>ยุคโบราณ (5,000 – 3,100 ปีก่อนคริสตกาล)เกมแรกของโลก: มีการขุดพบหลักฐานบอร์ดเกมเก่าแก่ เช่น Senet ในอียิปต์ และ Royal Game of Ur ในเมโสโปเตเมียวัตถุประสงค์: เดิมทีใช้เป็นกิจกรรมยามว่างของชนชั้นสูง ราชวงศ์ และบางเกมเกี่ยวโยงกับความเชื่อเรื่องศาสนาหรือพิธีกรรม</li>
+                    <li>ยุคกลางและการแพร่ขยาย (ศตวรรษที่ 1 – 19)การพัฒนาเกมกระดาน: เกิดเกมคลาสสิกอย่าง Backgammon (พัฒนาจากเกม Tabula ของโรมัน) หมากรุก (Chess) และหมากฮอสเปลี่ยนผ่านสู่ความบันเทิง: บอร์ดเกมเริ่มกระจายสู่คนทั่วไปทุกชนชั้น ไม่จำกัดแค่ราชวงศ์ ใช้เป็นเครื่องมือฝึกสมองและสันทนาการ</li>
+                    <li>ยุคบอร์ดเกมสมัยใหม่ (ศตวรรษที่ 20 – ปัจจุบัน)จุดกำเนิดเกมเศรษฐี: ปี 1935 กำเนิดเกม Monopoly (เกมเศรษฐี) ที่โด่งดังไปทั่วโลกยุคทองของบอร์ดเกม: ในช่วงปี 1990 เป็นต้นมา บอร์ดเกมแนวเยอรมัน (Eurogame) เช่น Catan ได้ปฏิวัติวงการให้เน้นการวางแผนและผู้เล่นมีส่วนร่วม ไม่ใช่แค่ทอดลูกเต๋าเสี่ยงดวง</li>
+                </ul>
+            </div>
+        </main>
+    </body>
+</html>
+-->
